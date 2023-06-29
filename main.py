@@ -6,12 +6,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 (train_X,train_Y),(test_X,test_Y)=cifar10.load_data()
 
-# n=6
-# plt.figure(figsize=(20,10))
-# for i in range(n):
-#     plt.subplot(330+1+i)
-#     plt.imshow(train_X[i])
-#     plt.show()
 
 from keras.models import Sequential
 from keras.layers import Dense
