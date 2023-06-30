@@ -78,8 +78,7 @@ results={
 from PIL import Image
 import numpy as np
 im=Image.open("cat1.png")
-# the input image is required to be in the shape of dataset, i.e (32,32,3)
-#  dghdfgh
+# the input image is required to be in the shape of dataset, i.e (32,32,3)\
 from keras.preprocessing import image
 from keras.applications.vgg16 import preprocess_input, decode_predictions
 img_path = 'cat1.png'
