@@ -38,8 +38,9 @@ def classify(file_path):
     image = image.resize((32,32))
     image = numpy.expand_dims(image, axis=0)
     image = numpy.array(image)
-    pred = model.predict_classes([image])[0]
-    sign = classes[pred]
+    pred = model.predict(image)[0]
+    max_index = numpy.argmax(pred)
+    sign = classes[max_index]
     print(sign)
     label.configure(foreground='#011638', text=sign) 
 
