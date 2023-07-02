@@ -79,3 +79,5 @@ heading = Label(top, text="Image Classification CIFAR10",pady=20, font=('arial',
 heading.configure(background='#CDCDCD',foreground='#364156')
 heading.pack()
 top.mainloop()
+
+#improve accuracy
